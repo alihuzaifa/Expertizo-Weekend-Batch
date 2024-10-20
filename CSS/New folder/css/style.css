@@ -1,0 +1,59 @@
+/* * {
+    background-color: red;
+}
+
+h1 {
+    color: aqua;
+}
+
+.paragraph {
+    color: aquamarine;
+}
+
+#unique-para {
+    color: chartreuse;
+}
+
+
+.parent>.child>.grandchild {
+    color: azure;
+}
+
+ */
+
+
+
+/* div a {
+    color: red;
+}
+
+div>a {} */
+
+/* 
+h1+p {
+    color: red;
+} */
+/* 
+h1~p {
+    color: red;
+}
+
+.parent>.child>.grandchild {
+    color: red;
+} */
+
+
+/* h1 {
+    color: red;
+}
+
+
+h1 {
+    color: green;
+} */
+
+
+div {
+    background-color: hsla(360, 93%, 37%,0.9);
+    color: rgb(195, 192, 192);
+}
