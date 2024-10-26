@@ -1,0 +1,57 @@
+/* @font-face {
+    font-family: "my-font";
+    src: url("fonts/Danfo/Danfo-Regular-VariableFont_ELSH.ttf");
+}
+
+body {
+    font-size: 10px;
+}
+
+h1,
+p {
+    font-family: serif;
+    font-family: sans-serif;
+    font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+/* font-family: "my-font";
+
+
+    font-size: 300%;
+} */
+
+/* .team1 {
+    font-size: 15px;
+}
+
+.team2 {
+    font-size: 25px;
+}
+
+.team3 {
+    font-size: 35px;
+}
+
+
+.child1 {
+    font-size: 10em;
+}
+
+.child2 {
+    font-size: 10em;
+}
+
+.child3 {
+    font-size: 10em;
+} */
+
+
+:root {
+    font-size: 30px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: oblique;
+    text-transform: capitalize;
+}
