@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --text-color: rgb(0, 128, 122);
+    --text-secondary-color: rgb(59, 235, 147);
+    --custom-font: 26px;
+}
+
+
+p {
+    color: var(--text-color);
+}

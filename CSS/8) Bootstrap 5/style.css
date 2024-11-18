@@ -1,0 +1,42 @@
+/* body {
+    background-color: red;
+    color: white;
+}
+
+
+1400px 1200px 992px 768px 576px
+
+
+max => top to bottom or high to low screen
+
+min => bottom to top or lower to high screen
+
+@media screen and (min-width: 576px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        background-color: chocolate;
+    }
+} */
