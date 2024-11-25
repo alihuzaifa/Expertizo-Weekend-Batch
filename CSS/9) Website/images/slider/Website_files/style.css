@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "heading";
+    src: url("fonts/Raleway-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "sub-heading";
+    src: url("fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+    font-family: "text";
+    src: url("fonts/Raleway-Regular.ttf");
+}
+
+:root {
+    --bg-color: black;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "text";
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.logo {
+    font-family: "sub-heading";
+    color: var(--text-color);
+}
+
+.hamburger-menu {
+    color: var(--text-color);
+}
+
+.slider-image {
+    background-image: url("images/slider/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}

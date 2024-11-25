@@ -1,0 +1,405 @@
+@font-face {
+    font-family: "heading";
+    src: url("fonts/Raleway-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "sub-heading";
+    src: url("fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+    font-family: "text";
+    src: url("fonts/Raleway-Regular.ttf");
+}
+
+:root {
+    --bg-color: black;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "text";
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.logo {
+    font-family: "sub-heading";
+    color: var(--text-color);
+}
+
+.hamburger-menu {
+    color: var(--text-color);
+}
+
+
+.menu-heading {
+    font-family: "heading";
+    font-size: 40px;
+}
+
+/* Carousel Css */
+
+
+.wrapper {
+    margin: 10vh;
+}
+
+.card {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 450px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 768px) {
+        min-height: 350px;
+    }
+
+    @media (max-width: 420px) {
+        min-height: 300px;
+    }
+
+    &.card-has-bg {
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        &:hover {
+            transform: scale(0.98);
+            box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+            background-size: 130%;
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+            .card-img-overlay {
+                transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+                background: rgb(255, 186, 33);
+                background: linear-gradient(0deg,
+                        rgba(255, 186, 33, 0.5) 0%,
+                        rgba(255, 186, 33, 1) 100%);
+            }
+        }
+    }
+
+    .card-footer {
+        background: none;
+        border-top: none;
+
+        .media {
+            img {
+                border: solid 3px rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+
+    .card-title {
+        font-weight: 800;
+    }
+
+    .card-meta {
+        color: rgba(0, 0, 0, 0.3);
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    .card-body {
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    &:hover {
+        .card-body {
+            margin-top: 30px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        cursor: pointer;
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        background: rgb(255, 186, 33);
+        background: linear-gradient(0deg,
+                rgba(255, 186, 33, 0.3785889355742297) 0%,
+                rgba(255, 186, 33, 1) 100%);
+    }
+}
+
+/* Show More Button Css */
+/* CSS */
+.button-84 {
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#000, #000);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: expo-brand-demi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica
+ Neue",Arial," Noto Sans",sans-serif," Apple Color Emoji"," Segoe UI Emoji"," Segoe UI Symbol"," Noto Color Emoji";
+ font-size: 18px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-84:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.button-84:active {
+    outline: 0;
+}
+
+.button-84:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+@media (max-width: 420px) {
+    .button-84 {
+        height: 48px;
+    }
+}
+
+
+/* Form */
+.form-bg {
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.custom-footer{
+    margin-top: 200px !important;
+}
+
+/* Footer */
+
+.footer {
+    position: relative;
+    margin-top: 300px;
+    padding: 3rem 0;
+    color: #fff;
+    background: #000;
+    margin-top: auto;
+}
+
+.footer__columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__col-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.footer__col-title *~span {
+    margin-left: 1rem;
+}
+
+.footer a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a *~span {
+    margin-left: 1rem;
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__copyrights {
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__copyrights p {
+    display: flex;
+}
+
+.footer__copyrights p a {
+    margin-left: 0.5rem;
+}
+
+@keyframes parralax {
+    0% {
+        background-position: 260px;
+    }
+
+    100% {
+        background-position: -10000vw;
+    }
+}
+
+@keyframes moto {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    5% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    25% {
+        transform: translateY(60px) rotate(-20deg);
+    }
+
+    49% {
+        transform: translateY(0) rotate(-1deg);
+    }
+
+    51% {
+        transform: translateY(0) rotate(1deg);
+    }
+
+    75% {
+        transform: translateY(60px) rotate(20deg);
+    }
+
+    80% {
+        transform: translateY(60px) rotate(0deg);
+    }
+
+    98% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes voiture {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.footer__parralax {
+    position: absolute;
+    left: 0;
+    top: -300px;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer__parralax-premierplan {
+    background-position: 260px;
+}
+
+.footer__parralax-trees,
+.footer__parralax-premierplan,
+.footer__parralax-secondplan {
+    position: absolute;
+    inset: 0;
+    background-repeat: repeat-x;
+    background-position-y: 100% !important;
+    animation: parralax 600s linear infinite;
+}
+
+.footer__parralax-moto {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -250px;
+    height: 200px;
+    width: 150px;
+    background: url(https://i.ibb.co/JCGfFJd/moto-net.gif);
+    background-repeat: no-repeat;
+    transform-origin: 50% 80%;
+    animation: moto 5s linear infinite;
+}
+
+.footer__parralax-voiture {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: 250px;
+    height: 114px;
+    width: 206px;
+    background: url(https://i.ibb.co/0Qhp4DN/voiture-fumee.gif);
+    background-repeat: no-repeat;
+    animation: voiture 1s linear infinite;
+}
+
+.footer__parralax-trees {
+    background-image: url(https://i.ibb.co/nQM4PGJ/arbres.png);
+    bottom: -60px;
+    animation-duration: 1000s;
+}
+
+.footer__parralax-premierplan {
+    background-image: url(https://i.ibb.co/RQhDWbk/premierplanv3.png);
+    animation-duration: 500s;
+}
+
+.footer__parralax-secondplan {
+    background-image: url(https://i.ibb.co/J3TjC4W/second-plan.png);
+    animation-duration: 600s;
+}
